@@ -274,7 +274,6 @@ string Bin3D::getSTL( int offset )
     itemsInPackOrder(items);
     for( auto& i : items )
         s << i->getSTL( offset );
-    s << Shape3D::getSTL( offset );
     return s.str();
 }
 
